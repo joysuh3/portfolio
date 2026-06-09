@@ -1,0 +1,142 @@
+.about-hero {
+  display: flex;
+  gap: 64px;
+  align-items: flex-start;
+  margin-bottom: 80px;
+}
+.about-photo {
+  flex-shrink: 0;
+  width: 280px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.about-photo img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  object-fit: cover;
+  height: 400px;
+}
+.about-text {
+  flex: 1;
+  max-width: 900px;
+}
+.about-label {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #C4849A;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.about-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #2C1A1D;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+.about-bio {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #2C1A1D;
+  line-height: 1.8;
+}
+.resume-link {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #C4849A;
+  text-decoration: none;
+  border-bottom: 1px solid #C4849A;
+  padding-bottom: 2px;
+  transition: opacity 0.2s ease;
+  margin-top: 24px;
+}
+.resume-link:hover {
+  opacity: 0.7;
+}
+.resume-section {
+  margin-bottom: 80px;
+}
+.section-divider {
+  border: none;
+  border-top: 1px solid #EDE0E4;
+  margin: 80px 0;
+}
+.section-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #2C1A1D;
+  margin-bottom: 32px;
+}
+.experience-section {
+  margin-bottom: 0;
+}
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.experience-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+.experience-left {
+  flex: 1;
+}
+.experience-role {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #2C1A1D;
+  margin-bottom: 4px;
+}
+.experience-company {
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: #2C1A1D;
+  line-height: 1.5;
+}
+.experience-date {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #C4849A;
+  white-space: nowrap;
+  padding-top: 2px;
+}
+.skills-section {
+  margin-bottom: 0;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
+.skills-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #C4849A;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.skills-list li {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #2C1A1D;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+
+.main-content {
+  padding: 80px 60px;
+}
