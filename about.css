@@ -1,3 +1,5 @@
+
+
 .about-hero {
   display: flex;
   gap: 64px;
@@ -139,6 +141,18 @@
 }
 
 
-.main-content {
-  padding: 80px 60px;
+@media (max-width: 768px) {
+  .about-hero {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .about-photo {
+    width: 100%;
+  }
+  .about-photo img {
+    height: 300px;
+  }
+  .about-text {
+    max-width: 100%;
+  }
 }
