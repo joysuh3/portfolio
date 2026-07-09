@@ -53,12 +53,9 @@ a {
 .sidenav-links a:hover {
   color: #C4849A;
 }
-
 .sidenav-links a.active {
   color: #C4849A;
 }
-
-
 .main-content {
   margin-left: 200px;
   padding: 80px 60px;
@@ -164,4 +161,87 @@ a {
 }
 .footer-links a:hover {
   color: #C4849A;
+}
+
+/* ── TABLET ── */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  .sidenav {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 32px;
+    border-right: none;
+    border-bottom: 1px solid #EDE0E4;
+  }
+  .sidenav-name {
+    margin-bottom: 0;
+  }
+  .sidenav-links {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .main-content {
+    margin-left: 0;
+    padding: 40px 32px;
+  }
+  .hero {
+    padding: 60px 32px;
+    margin: -40px -32px 40px -32px;
+  }
+  .hero-name {
+    font-size: 3rem;
+  }
+  .work-grid {
+    padding: 0;
+    gap: 12px;
+  }
+  .footer {
+    padding: 32px;
+  }
+}
+
+/* ── MOBILE ── */
+@media (max-width: 480px) {
+  .sidenav {
+    padding: 16px 20px;
+  }
+  .sidenav-links {
+    gap: 16px;
+  }
+  .sidenav-links a {
+    font-size: 0.9rem;
+  }
+  .main-content {
+    padding: 32px 20px;
+  }
+  .hero {
+    padding: 48px 20px;
+    margin: -32px -20px 32px -20px;
+  }
+  .hero-name {
+    font-size: 2.4rem;
+  }
+  .hero-tagline {
+    font-size: 0.9rem;
+  }
+  .hero-intro {
+    font-size: 0.88rem;
+  }
+  .work-grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+    gap: 12px;
+  }
+  .footer {
+    padding: 24px 20px;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
 }
