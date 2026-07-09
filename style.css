@@ -30,6 +30,12 @@ a {
   padding: 48px 32px;
   z-index: 100;
 }
+.sidenav-top {
+  display: none;
+}
+.burger {
+  display: none;
+}
 .sidenav-name {
   font-family: 'Playfair Display', serif;
   font-size: 1.2rem;
@@ -163,7 +169,7 @@ a {
   color: #C4849A;
 }
 
-/* ── TABLET ── */
+/* ── TABLET & MOBILE ── */
 @media (max-width: 768px) {
   body {
     flex-direction: column;
@@ -172,27 +178,52 @@ a {
     position: relative;
     width: 100%;
     height: auto;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 32px;
+    flex-direction: column;
+    padding: 16px 24px;
     border-right: none;
     border-bottom: 1px solid #EDE0E4;
+  }
+  .sidenav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
   .sidenav-name {
     margin-bottom: 0;
   }
+  .burger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+  }
+  .burger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: #2C1A1D;
+    border-radius: 2px;
+  }
   .sidenav-links {
-    flex-direction: row;
-    gap: 24px;
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 0 8px;
+  }
+  .sidenav-links.open {
+    display: flex;
   }
   .main-content {
-    margin-left: 0;
-    padding: 40px 32px;
+    margin-left: 0 !important;
+    padding: 40px 24px !important;
   }
   .hero {
-    padding: 60px 32px;
-    margin: -40px -32px 40px -32px;
+    padding: 60px 24px;
+    margin: -40px -24px 40px -24px;
   }
   .hero-name {
     font-size: 3rem;
@@ -202,28 +233,15 @@ a {
     gap: 12px;
   }
   .footer {
-    padding: 32px;
+    padding: 32px 24px;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
   }
 }
 
 /* ── MOBILE ── */
 @media (max-width: 480px) {
-  .sidenav {
-    padding: 16px 20px;
-  }
-  .sidenav-links {
-    gap: 16px;
-  }
-  .sidenav-links a {
-    font-size: 0.9rem;
-  }
-  .main-content {
-    padding: 32px 20px;
-  }
-  .hero {
-    padding: 48px 20px;
-    margin: -32px -20px 32px -20px;
-  }
   .hero-name {
     font-size: 2.4rem;
   }
@@ -235,13 +253,12 @@ a {
   }
   .work-grid {
     grid-template-columns: 1fr;
-    padding: 0;
-    gap: 12px;
   }
-  .footer {
-    padding: 24px 20px;
-    flex-direction: column;
-    gap: 12px;
-    text-align: center;
+  .main-content {
+    padding: 32px 20px !important;
+  }
+  .hero {
+    padding: 48px 20px;
+    margin: -32px -20px 32px -20px;
   }
 }
