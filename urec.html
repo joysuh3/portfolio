@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,15 +12,19 @@
 </head>
 <body>
   <nav class="sidenav">
-  <div class="sidenav-name"><a href="index.html">Joy Suh</a></div>
-  <ul class="sidenav-links">
-<li><a href="index.html" class="active">Work</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="mailto:joysuh3@gmail.com">Contact</a></li>
-  </ul>
-</nav>
+    <div class="sidenav-top">
+      <div class="sidenav-name"><a href="index.html">Joy Suh</a></div>
+      <button class="burger" aria-label="Toggle menu" onclick="document.querySelector('.sidenav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul class="sidenav-links">
+      <li><a href="index.html" class="active">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="mailto:joysuh3@gmail.com">Contact</a></li>
+    </ul>
+  </nav>
   <main class="main-content">
-    <!-- HERO -->
     <section class="project-hero">
       <p class="project-label">Social & Print Design · Campus Recreation</p>
       <h1 class="project-title">UREC</h1>
@@ -39,47 +45,38 @@
       </div>
     </section>
     <hr class="section-divider">
-
-    <!-- TABLE TOPPERS -->
     <section class="project-section">
       <h2 class="section-title">Table Toppers</h2>
       <p class="section-desc">Evergreen print pieces designed for display across UREC's fitness, nutrition, and adventure program areas. Each topper follows a distinct visual theme per program while maintaining brand consistency.</p>
       <div class="topper-grid">
         <img src="images/urec/fitness-topper.png" alt="Fitness table topper">
         <img src="images/urec/adventure-topper.png" alt="Adventure table topper">
-                <img src="images/urec/nutrition-topper.png" alt="Nutrition table topper">
+        <img src="images/urec/nutrition-topper.png" alt="Nutrition table topper">
       </div>
     </section>
     <hr class="section-divider">
-
-    <!-- TV DISPLAYS -->
     <section class="project-section">
       <h2 class="section-title">TV Displays</h2>
       <p class="section-desc">Widescreen digital displays designed for screens throughout UREC, promoting programs and events across fitness, nutrition, and special events.</p>
       <div class="tv-grid">
         <img src="images/urec/nutrition-tv.png" alt="Nutrition TV display">
-                <img src="images/urec/adventure-tv.png" alt="Adventure TV display">
+        <img src="images/urec/adventure-tv.png" alt="Adventure TV display">
         <img src="images/urec/deadlift-tv.png" alt="Dukes Deadlift Duel TV display">
       </div>
     </section>
     <hr class="section-divider">
-
-    <!-- SOCIAL & EVENT GRAPHICS -->
     <section class="project-section">
       <h2 class="section-title">Social & Event Graphics</h2>
       <p class="section-desc">Instagram stories and event promotional graphics designed to drive awareness and registration for UREC programs and fitness events.</p>
-     
-  <div class="social-grid">
-  <img src="images/urec/deadlift-story.png" alt="Dukes Deadlift Duel story">
-  <img src="images/urec/group-training.png" alt="Group Training Room poster">
-  <img src="images/urec/fitconnect.png" alt="FitConnect story">
-  <img src="images/urec/rep-to-recipe.png" alt="Rep to Recipe story">
-  <img src="images/urec/fitness-orientation.png" alt="Fitness Center Orientation story">
-  <img src="images/urec/nutrition-analysis.png" alt="Nutrition Analysis story">
-</div>
-
+      <div class="social-grid">
+        <img src="images/urec/deadlift-story.png" alt="Dukes Deadlift Duel story">
+        <img src="images/urec/group-training.png" alt="Group Training Room poster">
+        <img src="images/urec/fitconnect.png" alt="FitConnect story">
+        <img src="images/urec/rep-to-recipe.png" alt="Rep to Recipe story">
+        <img src="images/urec/fitness-orientation.png" alt="Fitness Center Orientation story">
+        <img src="images/urec/nutrition-analysis.png" alt="Nutrition Analysis story">
+      </div>
     </section>
-
     <footer class="footer">
       <p>© 2026 Joy Suh</p>
       <div class="footer-links">
@@ -90,3 +87,4 @@
   </main>
 </body>
 </html>
+ 
