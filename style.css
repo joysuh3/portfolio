@@ -240,11 +240,16 @@ a {
     padding: 0;
     gap: 12px;
   }
- .featured-project {
+.featured-project {
   padding: 0 60px;
   margin-top: 16px;
   display: flex;
-  justify-content: center;
+}
+
+.tile-featured {
+  width: 100%;
+  aspect-ratio: 16 / 6;
+  max-height: 320px;
 }
   .footer {
     padding: 32px 24px;
