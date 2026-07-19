@@ -8,30 +8,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- SIDE NAV -->
   <nav class="sidenav">
-    <div class="sidenav-name"><a href="index.html">Joy Suh</a></div>
+    <div class="sidenav-top">
+      <div class="sidenav-name"><a href="index.html">Joy Suh</a></div>
+      <button class="burger" aria-label="Toggle menu" onclick="document.querySelector('.sidenav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
     <ul class="sidenav-links">
-<li><a href="index.html" class="active">Work</a></li>
+      <li><a href="index.html" class="active">Work</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="mailto:joysuh3@gmail.com">Contact</a></li>
     </ul>
   </nav>
-
-  <!-- MAIN CONTENT -->
   <main class="main-content">
-
-    <!-- HERO -->
     <section class="hero">
       <h1 class="hero-name">Joy Suh</h1>
       <p class="hero-tagline">Design, branding, and everything in between.</p>
       <p class="hero-intro">A love for clean design, thoughtful campaigns, and brands with personality. Scroll to see my work.</p>
     </section>
-
-    <!-- WORK GRID -->
     <section class="work-grid" id="work">
-
       <a href="emilias.html" class="tile">
         <img src="images/emiliascover.png" alt="Emilia's Graces">
         <div class="tile-overlay">
@@ -39,7 +35,6 @@
           <p class="tile-sub">Brand Identity</p>
         </div>
       </a>
-
       <a href="teksynap.html" class="tile">
         <img src="images/tekcover.png" alt="Teksynap">
         <div class="tile-overlay">
@@ -47,7 +42,6 @@
           <p class="tile-sub">Brand Standards</p>
         </div>
       </a>
-
       <a href="bluestone.html" class="tile">
         <img src="images/yearbookcover.png" alt="The Bluestone">
         <div class="tile-overlay">
@@ -55,7 +49,6 @@
           <p class="tile-sub">Editorial Design</p>
         </div>
       </a>
-
       <a href="urec.html" class="tile">
         <img src="images/ureccover.png" alt="UREC">
         <div class="tile-overlay">
@@ -63,10 +56,16 @@
           <p class="tile-sub">Social & Print Campaigns</p>
         </div>
       </a>
-
     </section>
-
-    <!-- FOOTER -->
+    <section class="featured-project">
+      <a href="https://joysuh3.github.io/thebabeedit/" target="_blank" class="tile tile-featured">
+        <img src="images/babeeditcover.png" alt="The Babe Edit">
+        <div class="tile-overlay">
+          <p class="tile-title">The Babe Edit</p>
+          <p class="tile-sub">Editorial Site · Beauty & Fashion Marketing</p>
+        </div>
+      </a>
+    </section>
     <footer class="footer">
       <p>© 2026 Joy Suh</p>
       <div class="footer-links">
@@ -74,7 +73,6 @@
         <a href="mailto:joysuh3@gmail.com">Email</a>
       </div>
     </footer>
-
   </main>
 </body>
 </html>
