@@ -150,11 +150,14 @@ a {
 .featured-project {
   padding: 0 60px;
   margin-top: 16px;
+  display: flex;
 }
+
 .tile-featured {
-  aspect-ratio: 16 / 6;
-  max-height: 320px;
+  width: 100%;
+  height: 280px;
 }
+
 .footer {
   margin-top: 100px;
   padding: 32px 60px;
