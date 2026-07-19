@@ -1,3 +1,4 @@
+
 .project-hero {
   max-width: 800px;
   margin-bottom: 80px;
@@ -102,4 +103,21 @@
 
 .social-grid img:nth-child(2) {
   margin-top: 35px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  justify-items: center;
+}
+
+.video-item {
+  max-width: 100%;
+}
+
+@media (max-width: 700px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
 }
