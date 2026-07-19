@@ -152,7 +152,8 @@ a {
   margin-top: 16px;
 }
 .tile-featured {
-  aspect-ratio: 21 / 9;
+  aspect-ratio: 16 / 6;
+  max-height: 320px;
 }
 .footer {
   margin-top: 100px;
