@@ -8,7 +8,7 @@
 }
 .about-photo {
   flex-shrink: 0;
-  width: 200px;
+  width: 280px;
   overflow: hidden;
   border-radius: 8px;
 }
@@ -16,7 +16,6 @@
   width: 100%;
   border-radius: 8px;
   display: block;
-  object-fit: cover;
   height: 400px;
 }
 .about-text {
