@@ -14,10 +14,11 @@
 }
 .about-photo img {
   width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
   border-radius: 8px;
   display: block;
-  height: 400px;
-  object: fit;
 }
 .about-text {
   flex: 1;
